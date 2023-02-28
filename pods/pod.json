@@ -1,0 +1,25 @@
+{
+  "kind": "Pod",
+  "apiVersion": "v1",
+  "metadata": {
+    "creationTimestamp": null,
+    "name": "metrics-k8s",
+    "labels": {
+      "run": "metrics-k8s"
+    }
+  },
+  "spec": {
+    "containers": [
+      {
+        "name": "nginx-json",
+        "image": "nginx",
+        "ports": [
+          {
+            "containerPort": 80
+          }
+        ],
+        "resources": {}
+      }
+    ]
+  }
+}
